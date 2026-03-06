@@ -1,0 +1,36 @@
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    foo.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    bar.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aufgabe-10.txt
+
+wenn man es ohne git rm macht dann ist diese änderung nicht in der git history und wird somit nicht wirklich gelöscht auf zb GitHub
+
+zum wiederherstellen:
+für das mit normalem rm einfach git restore bar.txt
+und für das andere zuerst git restore --staged foo.txt und nacher git restore foo.txt
+könnte aber auch mit -f das gleiche machen anstatt Zwei commands
+
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    bar.txt -> bar2.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    foo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aufgabe-10.txt
+        foo2.txt
+
+git mv ist definitive besser weil es wird als rename angeschaut und bei mv geht history verloren und es ist wie eine neue datei.

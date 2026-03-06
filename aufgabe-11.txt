@@ -1,0 +1,5 @@
+git log --since/--after ist praktisch für wenn man z.b. grosse änderungen gemacht hat und die alten sehen möchte
+
+git log --name-only für wenn man schnell Wissen muss welche dateien geändert urden
+
+git log -[n] für wenn man nur ein paar commits Wissen muss
